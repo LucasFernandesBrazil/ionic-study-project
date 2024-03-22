@@ -1,20 +1,20 @@
 export interface IClasses {
-  id: number;
+  id: string;
   name: string;
-  schoolId: number;
-  teacherId: number;
-  students: number[];
+  schoolId: string;
+  teacherId: string;
+  students: string[];
 }
 
 export interface IStudent {
-  id: number;
+  id: string;
   name: string;
   age: number;
-  classId: number;
+  classId: string;
 }
 
 export interface ITeacher {
-  id: number;
+  id: string;
   name: string;
   classes: number[];
 }

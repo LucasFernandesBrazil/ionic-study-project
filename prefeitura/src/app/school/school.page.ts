@@ -16,6 +16,8 @@ export class SchoolPage implements OnInit {
   cep!: string;
   periodoFuncionamento!: string;
   message!: string;
+  email!: string;
+  phone!: string;
   schools: ISchool[] = [];
   public results: ISchool[] = [];
 
@@ -37,6 +39,23 @@ export class SchoolPage implements OnInit {
     );
   }
 
+  async newSchool() {
+    this.http.post('http://localhost:5000/schools', {
+      name: this.name,
+      cep: this.cep,
+      periodoFuncionamento: this.periodoFuncionamento,
+      email: this.email,
+      phone: this.phone,
+    }).subscribe(
+      (data: any) => {
+        this.getSchools();
+      },
+      error => {
+        console.error('Erro ao criar escola', error);
+      }
+    );
+  }
+
   handleInput(event: any) {
     const query = event.target.value.toLowerCase();
     this.results = this.schools.filter((d) => d.name.toLowerCase().indexOf(query) > -1);
@@ -47,13 +66,9 @@ export class SchoolPage implements OnInit {
   }
 
   confirm() {
-    const formData = {
-      name: this.name,
-      cep: this.cep,
-      periodoFuncionamento: this.periodoFuncionamento
-    };
-    console.log(formData);
-    this.modal.dismiss(this.name, 'confirm');
+    this.newSchool().then(() => {
+      this.modal.dismiss('confirm');
+    });
   }
 
   onWillDismiss(event: Event) {
@@ -68,6 +83,18 @@ export class SchoolPage implements OnInit {
       ...Array(5).fill(/\d/),
       '-',
       ...Array(3).fill(/\d/),
+    ],
+  };
+
+  readonly phoneMask: MaskitoOptions = {
+    mask: [
+      '(',
+      ...Array(2).fill(/\d/),
+      ')',
+      ' ',
+      ...Array(5).fill(/\d/),
+      '-',
+      ...Array(4).fill(/\d/),
     ],
   };
 

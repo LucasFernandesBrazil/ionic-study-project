@@ -67,21 +67,42 @@
           <ion-list>
             <ion-radio-group [(ngModel)]="periodoFuncionamento">
               <ion-item>
-                <ion-label>Período matutino</ion-label>
-                <ion-radio slot="end" value="matutino"></ion-radio>
+                <ion-radio value="matutino">Período matutino</ion-radio>
               </ion-item>
           
               <ion-item>
-                <ion-label>Período vespertino</ion-label>
-                <ion-radio slot="end" value="vespertino"></ion-radio>
+                <ion-radio value="vespertino">Período vespertino</ion-radio>
               </ion-item>
           
               <ion-item>
-                <ion-label>Ambos</ion-label>
-                <ion-radio slot="end" value="ambos"></ion-radio>
+                <ion-radio value="noturno">Noturno</ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-radio value="integral">Integral</ion-radio>
               </ion-item>
             </ion-radio-group>
           </ion-list>
+          <ion-item>
+            <ion-input
+              label="Email"
+              labelPlacement="stacked"
+              type="text"
+              placeholder="Informe o nome da Email"
+              [(ngModel)]="email"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input
+              label="Telefone"
+              labelPlacement="stacked"
+              type="text"
+              placeholder="Informe o nome da Telefone"
+              [(ngModel)]="phone"
+              [maskito]="phoneMask"
+              [maskitoElement]="maskPredicate"
+            ></ion-input>
+          </ion-item>
         </ion-list>
       </ion-content>
     </ng-template>
