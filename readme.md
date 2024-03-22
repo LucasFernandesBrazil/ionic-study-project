@@ -11,7 +11,7 @@ Antes de iniciar, você precisará ter os seguintes itens instalados em seu sist
 - [Node.js](https://nodejs.org/en/): Um ambiente de execução JavaScript para o servidor.
 - [npm](https://www.npmjs.com/): Gerenciador de pacotes do Node.js. Normalmente, ele é instalado junto com o Node.js.
 - [Ionic CLI](https://ionicframework.com/docs/cli): A linha de comando do Ionic Framework.
-- Um editor de código de sua preferência (recomendamos [Visual Studio Code](https://code.visualstudio.com/)).
+- Um editor de código de sua preferência (recomendo [Visual Studio Code](https://code.visualstudio.com/)).
 
 ### Instalação
 
