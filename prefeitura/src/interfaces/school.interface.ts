@@ -11,5 +11,6 @@ export interface ISchool {
 export enum ESchoolPeriod {
   MATUTINO = 'matutino',
   VESPERTINO = 'vespertino',
-  AMBOSE = 'ambos'
+  NOTURNO = 'noturno',
+  INTEGRAL = 'integral'
 }

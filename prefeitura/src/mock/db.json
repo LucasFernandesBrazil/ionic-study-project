@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Escola São José",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste@gmail.com",
       "classes": [
@@ -17,7 +17,7 @@
       "id": "2",
       "name": "Escola São Francisco",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste2@gmail.com",
       "classes": [
@@ -30,7 +30,7 @@
       "id": "3",
       "name": "Escola Abelhinha",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste3@gmail.com",
       "classes": [
@@ -43,7 +43,7 @@
       "id": "4",
       "name": "Escola Girassol",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste4@gmail.com",
       "classes": [
@@ -56,7 +56,7 @@
       "id": "5",
       "name": "Escola Pingo de Gente",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste5@gmail.com",
       "classes": [
@@ -69,7 +69,7 @@
       "id": "6",
       "name": "Escola Céu Azul",
       "cep": "12345-678",
-      "periodoFuncionamento": "ambos",
+      "periodoFuncionamento": "integral",
       "phone": "(11) 1234-5678",
       "email": "teste6@gmail.com",
       "classes": [

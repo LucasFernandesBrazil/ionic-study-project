@@ -1,7 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonModal } from '@ionic/angular';
 import { OverlayEventDetail } from '@ionic/core/components';
 import { MaskitoOptions, MaskitoElementPredicate } from '@maskito/core';
+import { ISchool } from 'src/interfaces/school.interface';
 
 @Component({
   selector: 'app-school',
@@ -14,26 +16,30 @@ export class SchoolPage implements OnInit {
   cep!: string;
   periodoFuncionamento!: string;
   message!: string;
+  schools: ISchool[] = [];
+  public results: ISchool[] = [];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  public data = [
-    'Escola São José',
-    'Escola São Francisco',
-    'Escola Abelhinha',
-    'Escola Girassol',
-    'Escola Pingo de Gente',
-    'Escola Céu Azul',
-    'Escola Sonho Meu',
-    'Escola Vila Feliz',
-    'Escola Ciranda',
-    'Escola Solar',
-  ];
-  public results = [...this.data];
+  ngOnInit() {
+    this.getSchools();
+  }
+
+  getSchools() {
+    this.http.get('http://localhost:5000/schools').subscribe(
+      (data: any) => {
+        this.schools = data;
+        this.results = [...this.schools]
+      },
+      error => {
+        console.error('Erro ao obter escolas', error);
+      }
+    );
+  }
 
   handleInput(event: any) {
     const query = event.target.value.toLowerCase();
-    this.results = this.data.filter((d) => d.toLowerCase().indexOf(query) > -1);
+    this.results = this.schools.filter((d) => d.name.toLowerCase().indexOf(query) > -1);
   }
 
   cancel() {
@@ -66,8 +72,4 @@ export class SchoolPage implements OnInit {
   };
 
   readonly maskPredicate: MaskitoElementPredicate = async (el) => (el as HTMLIonInputElement).getInputElement();
-
-  ngOnInit() {
-  }
-
 }
