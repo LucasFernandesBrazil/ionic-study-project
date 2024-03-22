@@ -10,6 +10,17 @@
       <ion-title size="large">Escolas</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div id="container">
+    <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)"></ion-searchbar>
+
+    <ion-list>
+      <ion-item *ngFor="let result of results">
+        <ion-label>{{ result }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button id="open-modal">
       <ion-icon name="add"></ion-icon>

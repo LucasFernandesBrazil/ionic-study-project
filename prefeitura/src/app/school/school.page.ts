@@ -17,6 +17,25 @@ export class SchoolPage implements OnInit {
 
   constructor() { }
 
+  public data = [
+    'Escola São José',
+    'Escola São Francisco',
+    'Escola Abelhinha',
+    'Escola Girassol',
+    'Escola Pingo de Gente',
+    'Escola Céu Azul',
+    'Escola Sonho Meu',
+    'Escola Vila Feliz',
+    'Escola Ciranda',
+    'Escola Solar',
+  ];
+  public results = [...this.data];
+
+  handleInput(event: any) {
+    const query = event.target.value.toLowerCase();
+    this.results = this.data.filter((d) => d.toLowerCase().indexOf(query) > -1);
+  }
+
   cancel() {
     this.modal.dismiss(null, 'cancel');
   }
