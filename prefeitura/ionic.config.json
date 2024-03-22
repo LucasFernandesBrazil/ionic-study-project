@@ -1,0 +1,7 @@
+{
+  "name": "prefeitura",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
