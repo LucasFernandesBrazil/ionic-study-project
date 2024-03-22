@@ -20,4 +20,31 @@ Antes de iniciar, você precisará ter os seguintes itens instalados em seu sist
    Primeiro, clone este repositório no seu sistema local usando o seguinte comando no terminal:
 
    ```sh
-   git clone https://[URL_DO_REPOSITORIO].git
+   git clone https://github.com/LucasFernandesBrazil/ionic-study-project.git
+
+2. **Instalar dependências**
+
+   Primeiro entre na pasta do projeto com o seguinte comando:
+
+   ```sh
+   cd /Prefeitura
+   ```
+
+   Após isso faça a instalação das dependências do projeto utilizando o NPM:
+
+   ```sh
+   npm install
+
+2. **Executar projeto**
+
+   Foi utilizado o JSON SERVER para simulação do backend com dados mockados, antes de iniciar a aplicação você terá que iniciar o servidor do JSON SERVER com o seguinte comando:
+
+   ```sh
+   json-server --watch db.json --port 5000
+   ```
+
+   Após iniciar o servidor na porta 5000, você poderá iniciar a aplicação com o seguinte comando:
+
+   ```sh
+   ionic server
+
