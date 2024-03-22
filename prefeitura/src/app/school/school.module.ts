@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { SchoolPageRoutingModule } from './school-routing.module';
 
 import { SchoolPage } from './school.page';
+import { MaskitoDirective } from '@maskito/angular';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    MaskitoDirective,
     SchoolPageRoutingModule
   ],
   declarations: [SchoolPage]
