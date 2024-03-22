@@ -1,0 +1,468 @@
+{
+  "schools": [
+    {
+      "id": "1",
+      "name": "Escola São José",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste@gmail.com",
+      "classes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Escola São Francisco",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste2@gmail.com",
+      "classes": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Escola Abelhinha",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste3@gmail.com",
+      "classes": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Escola Girassol",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste4@gmail.com",
+      "classes": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Escola Pingo de Gente",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste5@gmail.com",
+      "classes": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Escola Céu Azul",
+      "cep": "12345-678",
+      "periodoFuncionamento": "ambos",
+      "phone": "(11) 1234-5678",
+      "email": "teste6@gmail.com",
+      "classes": [
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "1",
+      "name": "1º ano A",
+      "schoolId": 1,
+      "teacherId": 1,
+      "students": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "name": "1º ano B",
+      "schoolId": 1,
+      "teacherId": 2,
+      "students": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "3",
+      "name": "1º ano C",
+      "schoolId": 1,
+      "teacherId": 3,
+      "students": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "4",
+      "name": "2º ano A",
+      "schoolId": 2,
+      "teacherId": 4,
+      "students": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "5",
+      "name": "2º ano B",
+      "schoolId": 2,
+      "teacherId": 5,
+      "students": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "6",
+      "name": "2º ano C",
+      "schoolId": 2,
+      "teacherId": 6,
+      "students": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "7",
+      "name": "3º ano A",
+      "schoolId": 3,
+      "teacherId": 7,
+      "students": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "8",
+      "name": "3º ano B",
+      "schoolId": 3,
+      "teacherId": 8,
+      "students": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "9",
+      "name": "3º ano C",
+      "schoolId": 3,
+      "teacherId": 9,
+      "students": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "10",
+      "name": "4º ano A",
+      "schoolId": 4,
+      "teacherId": 10,
+      "students": [
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "João",
+      "age": 6,
+      "classId": 1
+    },
+    {
+      "id": "2",
+      "name": "Maria",
+      "age": 6,
+      "classId": 1
+    },
+    {
+      "id": "3",
+      "name": "José",
+      "age": 6,
+      "classId": 1
+    },
+    {
+      "id": "4",
+      "name": "Pedro",
+      "age": 6,
+      "classId": 2
+    },
+    {
+      "id": "5",
+      "name": "Paula",
+      "age": 6,
+      "classId": 2
+    },
+    {
+      "id": "6",
+      "name": "Ana",
+      "age": 6,
+      "classId": 2
+    },
+    {
+      "id": "7",
+      "name": "Lucas",
+      "age": 6,
+      "classId": 3
+    },
+    {
+      "id": "8",
+      "name": "Mariana",
+      "age": 6,
+      "classId": 3
+    },
+    {
+      "id": "9",
+      "name": "Júlia",
+      "age": 6,
+      "classId": 3
+    },
+    {
+      "id": "10",
+      "name": "Rafael",
+      "age": 7,
+      "classId": 4
+    },
+    {
+      "id": "11",
+      "name": "Fernanda",
+      "age": 7,
+      "classId": 4
+    },
+    {
+      "id": "12",
+      "name": "Gabriela",
+      "age": 7,
+      "classId": 4
+    },
+    {
+      "id": "13",
+      "name": "Ricardo",
+      "age": 7,
+      "classId": 5
+    },
+    {
+      "id": "14",
+      "name": "Carla",
+      "age": 7,
+      "classId": 5
+    },
+    {
+      "id": "15",
+      "name": "Fábio",
+      "age": 7,
+      "classId": 5
+    },
+    {
+      "id": "16",
+      "name": "Márcia",
+      "age": 7,
+      "classId": 6
+    },
+    {
+      "id": "17",
+      "name": "Rafaela",
+      "age": 7,
+      "classId": 6
+    },
+    {
+      "id": "18",
+      "name": "Fernando",
+      "age": 7,
+      "classId": 6
+    },
+    {
+      "id": "19",
+      "name": "Ricardo",
+      "age": 8,
+      "classId": 7
+    },
+    {
+      "id": "20",
+      "name": "Carla",
+      "age": 8,
+      "classId": 7
+    },
+    {
+      "id": "21",
+      "name": "Fábio",
+      "age": 8,
+      "classId": 7
+    },
+    {
+      "id": "22",
+      "name": "Márcia",
+      "age": 8,
+      "classId": 8
+    },
+    {
+      "id": "23",
+      "name": "Rafaela",
+      "age": 8,
+      "classId": 8
+    },
+    {
+      "id": "24",
+      "name": "Fernando",
+      "age": 8,
+      "classId": 8
+    },
+    {
+      "id": "25",
+      "name": "Ricardo",
+      "age": 8,
+      "classId": 9
+    },
+    {
+      "id": "26",
+      "name": "Carla",
+      "age": 8,
+      "classId": 9
+    },
+    {
+      "id": "27",
+      "name": "Fábio",
+      "age": 8,
+      "classId": 9
+    },
+    {
+      "id": "28",
+      "name": "Márcia",
+      "age": 9,
+      "classId": 10
+    },
+    {
+      "id": "29",
+      "name": "Rafaela",
+      "age": 9,
+      "classId": 10
+    },
+    {
+      "id": "30",
+      "name": "Fernando",
+      "age": 9,
+      "classId": 10
+    }
+  ],
+  "teacher": [
+    {
+      "id": "1",
+      "name": "Professora Maria",
+      "classes": [
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Professora Ana",
+      "classes": [
+        2
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Professora Joana",
+      "classes": [
+        3
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Professora Maria",
+      "classes": [
+        4
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Professora Ana",
+      "classes": [
+        5
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Professora Joana",
+      "classes": [
+        6
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Professora Maria",
+      "classes": [
+        7
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Professora Ana",
+      "classes": [
+        8
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Professora Joana",
+      "classes": [
+        9
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Professora Maria",
+      "classes": [
+        10
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Professora Maria",
+      "classes": [7]
+    },
+    {
+      "id": 8,
+      "name": "Professora Ana",
+      "classes": [8]
+    },
+    {
+      "id": 9,
+      "name": "Professora Joana",
+      "classes": [9]
+    },
+    {
+      "id": 10,
+      "name": "Professora Maria",
+      "classes": [10]
+    }
+  ]
+}

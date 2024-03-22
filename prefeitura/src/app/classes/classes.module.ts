@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ClassPageRoutingModule } from './class-routing.module';
+import { ClassPageRoutingModule } from './classes-routing.module';
 
-import { ClassPage } from './class.page';
+import { ClassesPage } from './classes.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { ClassPage } from './class.page';
     IonicModule,
     ClassPageRoutingModule
   ],
-  declarations: [ClassPage]
+  declarations: [ClassesPage]
 })
 export class ClassPageModule {}
